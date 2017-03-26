@@ -1,0 +1,15 @@
+{
+  "name": "milage_tracker",
+  "version": "1.0.0",
+  "description": "Tracks the gas milage of your car",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "MilageTracker"
+  },
+  "author": "Kyle Hunt",
+  "license": "ISC"
+}
