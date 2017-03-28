@@ -23,7 +23,7 @@ export default class {
 
   get email(){return this._email;}
 
-  get user(id){return this;}
+  get user(){return this;}
 
   set name(name){this._name = name;}
 
