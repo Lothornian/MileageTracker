@@ -13,7 +13,7 @@ export default class {
   *
   * @TODO autogenerate id.
   */
-  constructor(name, email, id){
+  constructor(id, name, email){
     this._name = name;
     this._email = email;
     this._uuid = id

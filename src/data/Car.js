@@ -14,8 +14,9 @@ export default class{
   *
   * @TODO autogenerate the id.
   * @TODO create getters and setters
+  * @TODO add year
   */
-  constructor(name, id, userId, make, model){
+  constructor(id, name, userId, make, model){
     this._name = name;
     this._uuid = id;
     this._user = userId;
