@@ -6,7 +6,7 @@ This is an important metric to track because a dip, or spike, in gas mileage is 
 
 ---
 
-#Stretch goals
+# Stretch goals
 1. You can also enter the cost per gallon of gas to get the average cost and the annual cost of gas for your car.
 2. Allow KM per Liter as well as MPG
 3. Graphs!
