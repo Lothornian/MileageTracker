@@ -21,3 +21,11 @@ router.get ('/', (req, res) => {
 });
 
 export default router;
+
+/**
+let response = users.find({});
+let data = response.toArray();
+return data;
+
+return users.find({}).toArray();
+*/

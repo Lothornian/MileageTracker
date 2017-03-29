@@ -1,6 +1,6 @@
 import MongoClient from 'mongod';
 
-const COLLECTION_NAME = 'milage';
+const COLLECTION_NAME = 'mileage';
 const url = `mongodb://localhost:27017/${COLLECTION_NAME}`;
 let database;
 

@@ -41,6 +41,7 @@ export let fillups = [fillup1, fillup2, fillup3, fillup4, fillup5, fillup6, fill
 export const loadData = async() => {
   const users = await getCollection('users');
 
+//TODO only add users if the DB is empty
   const result = await users.insertMany([ user1 , user2 , user3 ]);
 
   await closeDb();
