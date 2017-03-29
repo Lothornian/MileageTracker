@@ -10,8 +10,3 @@ export const getCollection = async (collectionIWant) => {
   const db = await connect();
   return db.collection(collectionIWant);
 };
-
-export const closeDb = async () => {
-  const db = await connect();
-  await db.close();
-}

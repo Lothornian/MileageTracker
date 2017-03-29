@@ -9,7 +9,6 @@ import Car from './Car.js';
 import Fillup from './Fillup.js';
 import User from './User.js';
 import {getCollection} from '../db.js';
-import {closeDb} from '../db.js';
 
 let user1 = new User(12345,  `Kyle`, `KyleRHunt@gmail.com`);
 let user2 = new User(12346, `Thor`, `Thor@example.com`);
@@ -43,6 +42,4 @@ export const loadData = async() => {
 
 //TODO only add users if the DB is empty
   const result = await users.insertMany([ user1 , user2 , user3 ]);
-
-  await closeDb();
 }

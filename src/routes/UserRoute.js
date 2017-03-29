@@ -1,7 +1,6 @@
 import {Router} from 'Express';
 // import {users} from '../data/data.js';
 import {getCollection} from '../db.js';
-import {closeDb} from '../db.js';
 
 const router = new Router();
 
