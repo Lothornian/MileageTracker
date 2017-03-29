@@ -8,7 +8,8 @@ Description: This class is used to generate sample data for testing the milage t
 import Car from './Car.js';
 import Fillup from './Fillup.js';
 import User from './User.js';
-import {collection} from '../db.js';
+import {getCollection} from '../db.js';
+import {closeDb} from '../db.js';
 
 let user1 = new User(12345,  `Kyle`, `KyleRHunt@gmail.com`);
 let user2 = new User(12346, `Thor`, `Thor@example.com`);
@@ -38,7 +39,9 @@ export let cars = [car1, car2, car3, car4, car5];
 export let fillups = [fillup1, fillup2, fillup3, fillup4, fillup5, fillup6, fillup7, fillup8, fillup9];
 
 export const loadData = async() => {
-  const users = await collection('users');
+  const users = await getCollection('users');
 
-  const result = await users.insertMany(users);
+  const result = await users.insertMany([ user1 , user2 , user3 ]);
+
+  await closeDb();
 }
